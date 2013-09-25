@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>koji::*</title>
+<link rel="alternate" href="http://koji--.github.io/blog/" />
+<author>koji_magi</author>
+<generator uri="https://github.com/Songmu/p5-Riji" version="0.0.6">Perl Riji</generator>
+<id>tag:koji--.github.io,2013-08-31:blog:</id>
+<updated>2013-09-26T02:35:46+09:00</updated>
+<entry>
+<title type="text">一通りデザインをいじってみた</title>
+<link href="http://koji--.github.io/blog/entry/2013-09-26-01.html" />
+<author>
+<name>koji--</name>
+</author>
+<content><![CDATA[<h1>一通りデザインをいじってみた</h1>
+
+<p>あまりクドいデザインに出来るほど<br/>
+デザイン脳があるわけではないので<br/>
+ドットのボーダーとシンプルな色使いで<br/>
+まとめてみました。</p>
+
+<p>もう少し改良の余地はありますが<br/>
+ひとまずこれでやってみようかなと思います。</p>
+]]></content>
+<id>tag:koji--.github.io,2013-09-26:blog:entry-2013-09-26-01.html</id>
+<published>2013-09-26T34:34:21+0900</published>
+<updated>2013-09-26T02:34:21+09:00</updated>
+</entry>
+<entry>
+<title type="text">Riji触りつつデザインをいじってみている</title>
+<link href="http://koji--.github.io/blog/entry/2013-09-15.html" />
+<author>
+<name>koji--</name>
+</author>
+<content><![CDATA[<h1>Riji触りつつデザインをいじってみている</h1>
+
+<p>ぼちぼちブログのデザインラフを作ったので<br/>
+HTMLのコーディングをはじめてみたりしています。</p>
+
+<p>デザインを考える作業はプログラムを書く作業とは<br/>
+よく似ているけど考えることはやっぱり違っていて<br/>
+とても興味深い作業です。</p>
+
+<p>しばらくはRijiとキャッキャウフフしながら<br/>
+ああでもないこうでもないと<br/>
+デザインをいじってみようかなと思います。</p>
+]]></content>
+<id>tag:koji--.github.io,2013-09-15:blog:entry-2013-09-15.html</id>
+<published>2013-09-15T09:09:44+0900</published>
+<updated>2013-09-26T02:34:21+09:00</updated>
+</entry>
+</feed>
