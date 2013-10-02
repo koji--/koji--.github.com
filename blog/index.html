@@ -34,6 +34,9 @@
   article.thin {
       margin: 2%;
   }
+  article pre {
+      margin: 2%;
+  }
   h1.title {
       margin: 1%;
       text-align: left;
@@ -138,26 +141,32 @@
 <article>
   <aside class="minimenu">
     <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
+    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
     </ul>
   </aside>
   <h1 class="title"><a href="http://koji--.github.io/blog/entry/2013-10-03-01.html">gh-pagesにtweetボタンを設置したらurlが動かなかった</a></h1>
-  <time pubdate class="pubdate">2013-10-03 03:59</time>
+  <time pubdate class="pubdate">2013-10-03 04:18</time>
   <div class="entry-body">
     
 
 <pre><code>&lt;a href="https://twitter.com/share" class="twitter-share-button"&gt;Tweet&lt;/a&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
 </code></pre>
+
+<p>こんな感じでtweetボタンを設置できるけど、投稿文にurlが付与されない。<br/>
+aタグにdata-urlで指定してもダメだった。<br/>
+ローカルで動かしてみて、適当なドメインをhostsで指定したり<br/>
+IP直接指定だとurlが付与されるので、github.ioの仕様なのかも。</p>
 
   </div>
 </article>
 <article>
   <aside class="minimenu">
     <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
+    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
     </ul>
   </aside>
@@ -179,8 +188,8 @@
 <article>
   <aside class="minimenu">
     <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
+    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
     <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
     </ul>
   </aside>
