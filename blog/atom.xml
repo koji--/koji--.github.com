@@ -7,6 +7,18 @@
 <id>tag:koji--.github.io,2013-08-31:blog:</id>
 <updated>2013-10-03T03:19:39+09:00</updated>
 <entry>
+<title type="text">gh-pagesにtweetボタンを設置したらurlが動かなかった</title>
+<link href="http://koji--.github.io/blog/entry/2013-10-03-01.html" />
+<content><![CDATA[<h1>gh-pagesにtweetボタンを設置したらurlが動かなかった</h1>
+
+<pre><code>&lt;a href="https://twitter.com/share" class="twitter-share-button"&gt;Tweet&lt;/a&gt;
+</code></pre>
+]]></content>
+<id>tag:koji--.github.io,2013-10-03:blog:entry-2013-10-03-01.html</id>
+<published>2013-10-03T59:59:34+0900</published>
+<updated>2013-10-03T03:59:34+09:00</updated>
+</entry>
+<entry>
 <title type="text">一通りブログのデザインをいじってみた</title>
 <link href="http://koji--.github.io/blog/entry/2013-09-26-01.html" />
 <author>
