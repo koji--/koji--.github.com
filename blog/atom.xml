@@ -5,14 +5,14 @@
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.6">Perl Riji</generator>
 <id>tag:blog.nobers.com,2013-08-31:</id>
-<updated>2013-10-03T04:18:52+09:00</updated>
+<updated>2013-10-04T02:48:45+09:00</updated>
 <entry>
-<title type="text">gh-pagesにtweetボタンを設置したらurlが動かなかった</title>
+<title type="text">githubのPagesにtweetボタンを設置したらurlが動かなかった</title>
 <link href="http://blog.nobers.com/entry/2013-10-03-01.html" />
 <author>
 <name>koji--</name>
 </author>
-<content><![CDATA[<h1>gh-pagesにtweetボタンを設置したらurlが動かなかった</h1>
+<content><![CDATA[<h1>githubのPagesにtweetボタンを設置したらurlが動かなかった</h1>
 
 <pre><code>&lt;a href="https://twitter.com/share" class="twitter-share-button"&gt;Tweet&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
@@ -25,7 +25,7 @@ IP直接指定だとurlが付与されるので、github.ioの仕様なのかも
 ]]></content>
 <id>tag:blog.nobers.com,2013-10-03:entry-2013-10-03-01.html</id>
 <published>2013-10-03T18:18:52+0900</published>
-<updated>2013-10-03T04:18:52+09:00</updated>
+<updated>2013-10-04T02:48:45+09:00</updated>
 </entry>
 <entry>
 <title type="text">一通りブログのデザインをいじってみた</title>
