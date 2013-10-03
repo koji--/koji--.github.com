@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://koji--.github.io/blog/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.nobers.com/atom.xml">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
   <style>
   header {
@@ -18,7 +18,7 @@
       text-align: center;
       margin: 1% 15%;
       font-size: 14px;
-      background: url(http://koji--.github.io/blog/static/img/paper_bg.jpg);
+      background: url(http://blog.nobers.com/static/img/paper_bg.jpg);
   }
   section {
       border: dotted gray;
@@ -58,11 +58,8 @@
       text-align: left;
   }
   nav {
-      height: 100%;
       border: dotted gray;
-      border-left-width: 0;
-      border-right-width: 0;
-      border-top-width: 0;
+      border-width: 0 0 medium;
       margin: 1px 0;
   }
   ul {
@@ -79,11 +76,11 @@
   footer {
       text-align: left;
       border: dotted gray;
-      border-bottom-width: 3px;
-      border-top-width: 0;
+      border-width: 0 medium medium;
       padding-bottom: 2px;
       padding-left: 10px;
       padding-top: 1px;
+      clear: both;
   }
   p.author {
       margin: 0 0 0 3px;
@@ -104,10 +101,18 @@
   }
   ul.submenu {
       padding: 0 0 0 20px;
-      height: 20px;
       margin-bottom: 1px;
   }
   ul.submenu li {
+      float: left;
+      margin-right: 10px
+  }
+  ul.footmenu {
+      padding-left: 10px;
+      margin-bottom: 2px;
+      float: right;
+  }
+  ul.footmenu li {
       float: left;
       margin-right: 10px
   }
@@ -123,6 +128,9 @@
   ul.archives {
       padding: 1%;
   }
+  div.clear {
+      clear: both;
+  }
   </style>
   <title>
     koji::*
@@ -130,23 +138,16 @@
 </head>
 <body>
   <header class="navbar">
-    <h1><a href="http://koji--.github.io/blog/">koji::*</a></h1>
+    <h1><a href="http://blog.nobers.com/">koji::*</a></h1>
   </header>
   <section>
 <nav>
   <ul class="submenu">
-    <li><a href="http://koji--.github.io/blog/archives.html">Archives</a></li>
+    <li><a href="http://blog.nobers.com/archives.html">Archives</a></li>
   </ul>
 </nav>
 <article>
-  <aside class="minimenu">
-    <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
-    </ul>
-  </aside>
-  <h1 class="title"><a href="http://koji--.github.io/blog/entry/2013-10-03-01.html">gh-pagesにtweetボタンを設置したらurlが動かなかった</a></h1>
+  <h1 class="title"><a href="http://blog.nobers.com/entry/2013-10-03-01.html">gh-pagesにtweetボタンを設置したらurlが動かなかった</a></h1>
   <time pubdate class="pubdate">2013-10-03 04:18</time>
   <div class="entry-body">
     
@@ -163,14 +164,7 @@ IP直接指定だとurlが付与されるので、github.ioの仕様なのかも
   </div>
 </article>
 <article>
-  <aside class="minimenu">
-    <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
-    </ul>
-  </aside>
-  <h1 class="title"><a href="http://koji--.github.io/blog/entry/2013-09-26-01.html">一通りブログのデザインをいじってみた</a></h1>
+  <h1 class="title"><a href="http://blog.nobers.com/entry/2013-09-26-01.html">一通りブログのデザインをいじってみた</a></h1>
   <time pubdate class="pubdate">2013-09-26 02:34</time>
   <div class="entry-body">
     
@@ -186,14 +180,7 @@ IP直接指定だとurlが付与されるので、github.ioの仕様なのかも
   </div>
 </article>
 <article>
-  <aside class="minimenu">
-    <ul class="tags">
-    <li><a href="http://koji--.github.io/blog/tag/design.html">design(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/riji.html">riji(2)</a></li>
-    <li><a href="http://koji--.github.io/blog/tag/github.html">github(1)</a></li>
-    </ul>
-  </aside>
-  <h1 class="title"><a href="http://koji--.github.io/blog/entry/2013-09-15.html">Riji触りつつデザインをいじってみている</a></h1>
+  <h1 class="title"><a href="http://blog.nobers.com/entry/2013-09-15.html">Riji触りつつデザインをいじってみている</a></h1>
   <time pubdate class="pubdate">2013-09-15 22:09</time>
   <div class="entry-body">
     
@@ -211,6 +198,12 @@ HTMLのコーディングをはじめてみたりしています。</p>
 
   </div>
 </article>
+<ul class="footmenu">
+<li><a href="http://blog.nobers.com/tag/riji.html">riji(2)</a></li>
+<li><a href="http://blog.nobers.com/tag/design.html">design(2)</a></li>
+<li><a href="http://blog.nobers.com/tag/github.html">github(1)</a></li>
+</ul>
+<div class="clear"></div>
   </section>
   <footer>
     <p class="author">author: koji_magi</p>

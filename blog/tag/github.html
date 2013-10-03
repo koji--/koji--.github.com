@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://koji--.github.io/blog/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.nobers.com/atom.xml">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
   <style>
   header {
@@ -18,7 +18,7 @@
       text-align: center;
       margin: 1% 15%;
       font-size: 14px;
-      background: url(http://koji--.github.io/blog/static/img/paper_bg.jpg);
+      background: url(http://blog.nobers.com/static/img/paper_bg.jpg);
   }
   section {
       border: dotted gray;
@@ -58,11 +58,8 @@
       text-align: left;
   }
   nav {
-      height: 100%;
       border: dotted gray;
-      border-left-width: 0;
-      border-right-width: 0;
-      border-top-width: 0;
+      border-width: 0 0 medium;
       margin: 1px 0;
   }
   ul {
@@ -79,11 +76,11 @@
   footer {
       text-align: left;
       border: dotted gray;
-      border-bottom-width: 3px;
-      border-top-width: 0;
+      border-width: 0 medium medium;
       padding-bottom: 2px;
       padding-left: 10px;
       padding-top: 1px;
+      clear: both;
   }
   p.author {
       margin: 0 0 0 3px;
@@ -104,10 +101,18 @@
   }
   ul.submenu {
       padding: 0 0 0 20px;
-      height: 20px;
       margin-bottom: 1px;
   }
   ul.submenu li {
+      float: left;
+      margin-right: 10px
+  }
+  ul.footmenu {
+      padding-left: 10px;
+      margin-bottom: 2px;
+      float: right;
+  }
+  ul.footmenu li {
       float: left;
       margin-right: 10px
   }
@@ -123,6 +128,9 @@
   ul.archives {
       padding: 1%;
   }
+  div.clear {
+      clear: both;
+  }
   </style>
   <title>
 github | koji::*
@@ -130,13 +138,13 @@ github | koji::*
 </head>
 <body>
   <header class="navbar">
-    <h1><a href="http://koji--.github.io/blog/">koji::*</a></h1>
+    <h1><a href="http://blog.nobers.com/">koji::*</a></h1>
   </header>
   <section>
 <h1 class="title">$tag ~= /^github$/</h1>
 <article class="thin">
 <ul class="archives">
-<li><time>2013-10-03</time>&nbsp;<a href="http://koji--.github.io/blog/entry/2013-10-03-01.html">gh-pagesにtweetボタンを設置したらurlが動かなかった</a></li>
+<li><time>2013-10-03</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-10-03-01.html">gh-pagesにtweetボタンを設置したらurlが動かなかった</a></li>
 </ul>
 </article>
   </section>

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://koji--.github.io/blog/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.nobers.com/atom.xml">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
   <style>
   header {
@@ -18,7 +18,7 @@
       text-align: center;
       margin: 1% 15%;
       font-size: 14px;
-      background: url(http://koji--.github.io/blog/static/img/paper_bg.jpg);
+      background: url(http://blog.nobers.com/static/img/paper_bg.jpg);
   }
   section {
       border: dotted gray;
@@ -58,11 +58,8 @@
       text-align: left;
   }
   nav {
-      height: 100%;
       border: dotted gray;
-      border-left-width: 0;
-      border-right-width: 0;
-      border-top-width: 0;
+      border-width: 0 0 medium;
       margin: 1px 0;
   }
   ul {
@@ -79,11 +76,11 @@
   footer {
       text-align: left;
       border: dotted gray;
-      border-bottom-width: 3px;
-      border-top-width: 0;
+      border-width: 0 medium medium;
       padding-bottom: 2px;
       padding-left: 10px;
       padding-top: 1px;
+      clear: both;
   }
   p.author {
       margin: 0 0 0 3px;
@@ -104,10 +101,18 @@
   }
   ul.submenu {
       padding: 0 0 0 20px;
-      height: 20px;
       margin-bottom: 1px;
   }
   ul.submenu li {
+      float: left;
+      margin-right: 10px
+  }
+  ul.footmenu {
+      padding-left: 10px;
+      margin-bottom: 2px;
+      float: right;
+  }
+  ul.footmenu li {
       float: left;
       margin-right: 10px
   }
@@ -123,6 +128,9 @@
   ul.archives {
       padding: 1%;
   }
+  div.clear {
+      clear: both;
+  }
   </style>
   <title>
 gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*
@@ -130,19 +138,19 @@ gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*
 </head>
 <body>
   <header class="navbar">
-    <h1><a href="http://koji--.github.io/blog/">koji::*</a></h1>
+    <h1><a href="http://blog.nobers.com/">koji::*</a></h1>
   </header>
   <section>
 <nav>
   <ul class="paginate">
-    <li class="prev">prev: <a href="http://koji--.github.io/blog/entry/2013-09-26-01.html">一通りブログのデザインをいじってみた</a>
+    <li class="prev">prev: <a href="http://blog.nobers.com/entry/2013-09-26-01.html">一通りブログのデザインをいじってみた</a>
   </ul>
 </nav>
 
 <article>
   <aside class="minimenu">
     <ul class="tags">
-      <li><a href="http://koji--.github.io/blog/tag/github.html">github</a></li>
+      <li><a href="http://blog.nobers.com/tag/github.html">github</a></li>
     </ul>
   </aside>
   <div class="entry">
@@ -169,9 +177,9 @@ IP直接指定だとurlが付与されるので、github.ioの仕様なのかも
       <dd class="time">2013-10-03 04:18</dd>
   </dl>
   <div class="share-buttons">
-      <a href="http://b.hatena.ne.jp/entry/http://koji--.github.io/blog/entry/2013-10-03-01.html" class="hatena-bookmark-button" data-hatena-bookmark-title="gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+      <a href="http://b.hatena.ne.jp/entry/http://blog.nobers.com/entry/2013-10-03-01.html" class="hatena-bookmark-button" data-hatena-bookmark-title="gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
 
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*" data-url="http://koji--.github.io/blog/entry/2013-10-03-01.html">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="gh-pagesにtweetボタンを設置したらurlが動かなかった | koji::*" data-url="http://blog.nobers.com/entry/2013-10-03-01.html">Tweet</a>
   </div>
 </article>
   </section>
