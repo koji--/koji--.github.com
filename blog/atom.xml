@@ -5,7 +5,7 @@
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.6">Perl Riji</generator>
 <id>tag:blog.nobers.com,2013-08-31:</id>
-<updated>2013-10-14T16:57:43+09:00</updated>
+<updated>2013-10-14T18:19:20+09:00</updated>
 <entry>
 <title type="text">書評のようなもの ++ 雅なPerl入門</title>
 <link href="http://blog.nobers.com/entry/2013-10-14-01.html" />
@@ -244,9 +244,14 @@ Perlはある程度触れるかな、くらいの人ならほぼつまずかな�
 もう少し具体的なサンプルがあってもいいかな、という気もしました。<br/>
 そういえばmap関数はあったのにgrep関数が無かったですね…もしかしてgrepってマイナーなのかな。</p>
 
-<p>あと、誤植や間違いとおぼしき箇所については<br/>
+<p>あとは、11.3でモジュールを入れる例として「cpanm Moose」していたけど<br/>
+もう少しさくっと入るモジュールの方がいいかなと思いました。<br/>
+依存が多くて時間かかりますし、何かしらテストこけそうな気が…。<br/>
+（あえて茨の道を味わってみるのもアリと言えばアリですが！）</p>
+
+<p>蛇足かと思いましたが、誤植や間違いとおぼしき箇所については<br/>
 出来る限りメモしておいたので、本記事の最後にまとめて記しておきます。<br/>
-誤植まとめに誤植などありましたら、コメント頂けると有り難いです。</p>
+誤植まとめに誤りなどありましたら、コメント頂けると有り難いです。</p>
 
 <h2>ラノベ読みとしての感想</h2>
 
@@ -302,56 +307,112 @@ Perl好きなら持っておいて、間違いは無いかと。</p>
 
 <h2>誤植、間違い等まとめ</h2>
 
-<pre><code>P13. 下方のサンプルコード４行目。誤：小数点以下３桁。正：小数点以下６桁
-P16. ７行目。誤：$x、$y、$x。正：$x、$y、$z
-P19. 表4.1、$x &gt;= $y の意味。誤：$x より$y が大きいか等しい。正：$x は$y より大きいか等しい
-P22. 4.8の三つ目の会話。誤：話者が雅。正：話者がクロウ。
-P31. 表4.3、$x ge $y の意味。誤：$x はより$y は大きいか等しい。正：$x は $y より大きいか等しい
-     同表、$x le $y の意味。誤：$x より$y は小さいか等しい。正：$x は$y より小さいか等しい
-P32. 一つ目のサンプルコードのコメント。誤："10" + "20"。正："10" . "20"
-P50. 下段のサンプルコード、一行目。誤：//emlist{。正：この行が不要。
-P77. 9.14の最後のクロウの台詞。誤：マッチする文字列の中で最も短いもの。正：マッチする文字列の中で最初にマッチしたもの
-     実際にコードを叩いて確かめてみました。perldoc perlreでは、以下のように説明されています
+<p>P13. 下方のサンプルコード４行目</p>
 
-     By default, a quantified subpattern is "greedy", that is, it will match
-     as many times as possible (given a particular starting location) while
-     still allowing the rest of the pattern to match.  If you want it to
-     match the minimum number of times possible, follow the quantifier with
-     a "?".  Note that the meanings don't change, just the "greediness":
+<pre><code>誤：小数点以下３桁
+正：小数点以下６桁
+</code></pre>
 
-         *?        Match 0 or more times, not greedily
-         +?        Match 1 or more times, not greedily
-         ??        Match 0 or 1 time, not greedily
-         {n}?      Match exactly n times, not greedily (redundant)
-         {n,}?     Match at least n times, not greedily
-         {n,m}?    Match at least n but not more than m times, not greedily
+<p>P16. ７行目</p>
 
-P81. 表9.5、メタ文字の(?:b)。誤：(?:b)。正：(?:a)。意味の説明が「パターンaのグループ化」なので
-P84. 9.25項目全体。誤：ここは恐らく(?&lt;=)の説明として、9.25の中身自体が適切ではないです。 
-     perldoc perlreから、(?&lt;=)の説明を一部抜粋します。
+<pre><code>誤：$x、$y、$x
+正：$x、$y、$z
+</code></pre>
 
-     "(?&lt;=pattern)" "\K"
-         A zero-width positive look-behind assertion.  For example,
-         "/(?&lt;=\t)\w+/" matches a word that follows a tab, without
-         including the tab in $&amp;.  Works only for fixed-width look-
-         behind.
+<p>P19. 表4.1、$x >= $y の意味</p>
 
-     ざっくり訳すと、「タブ文字列(\t)に文字列が一文字以上繋がってる場合にマッチするけど、  
-     $&amp;（マッチした文字列が入る変数）にタブは含まないよ」となります。
-     こんな感じのコードを書くと、実際に動きが確認出来ます。
+<pre><code>誤：$x より$y が大きいか等しい
+正：$x は$y より大きいか等しい
+</code></pre>
 
-     $ perl -E 'if ("\taaa" =~ /(?&lt;=\t)\w+/) { say $&amp; }'
-     aaa
+<p>P22. 4.8の三つ目の会話</p>
 
-P102. 11.3のcpanm Moose。これは間違いじゃないのだけど、Mooseは依存が多くてインストールに時間がかかるから、
-      もう少しさくっと入るモジュールの方がいいかも。何かしらテストこけそうだし。
-      あえて茨の道を味わうのもアリと言えばアリですが！
-P115. サンプルコード、new関数の下から二行目のコメント。誤：空のハッシュリファレンスを用意。正：空じゃない
+<pre><code>誤：話者が雅
+正：話者がクロウ
+</code></pre>
+
+<p>P31. 表4.3、$x ge $y の意味</p>
+
+<pre><code>誤：$x はより$y は大きいか等しい
+正：$x は $y より大きいか等しい
+</code></pre>
+
+<p>P31. 表4.3、$x le $y の意味</p>
+
+<pre><code>誤：$x より$y は小さいか等しい
+正：$x は$y より小さいか等しい
+</code></pre>
+
+<p>P32. 一つ目のサンプルコードのコメント</p>
+
+<pre><code>誤："10" + "20"
+正："10" . "20"
+</code></pre>
+
+<p>P50. 下段のサンプルコード、一行目</p>
+
+<pre><code>誤：//emlist{
+正：この行が不要
+</code></pre>
+
+<p>P77. 9.14の最後のクロウの台詞</p>
+
+<pre><code>誤：マッチする文字列の中で最も短いもの
+正：マッチする文字列の中で最初にマッチしたもの
+
+実際にコードを叩いて確かめてみると、説明とは違って長い方にマッチします
+perldoc perlreでは、以下のように説明されています
+
+By default, a quantified subpattern is "greedy", that is, it will match
+as many times as possible (given a particular starting location) while
+still allowing the rest of the pattern to match.  If you want it to
+match the minimum number of times possible, follow the quantifier with
+a "?".  Note that the meanings don't change, just the "greediness":
+
+    *?       Match 0 or more times, not greedily
+    +?       Match 1 or more times, not greedily
+    ??       Match 0 or 1 time, not greedily
+    {n}?     Match exactly n times, not greedily (redundant)
+    {n,}?    Match at least n times, not greedily
+    {n,m}?    Match at least n but not more than m times, not greedily
+</code></pre>
+
+<p>P81. 表9.5、メタ文字の(?:b)</p>
+
+<pre><code>誤：(?:b)
+正：(?:a)
+   「意味」の項目が「パターンaのグループ化」になっていたので、表の流れから考えて、
+   「意味」ではなく「メタ文字」の項目を直す形にしています
+</code></pre>
+
+<p>P84. 9.25項目全体</p>
+
+<pre><code>ここは恐らく(?&lt;=)の説明として、9.25の中身自体が適切ではないです
+perldoc perlreから、(?&lt;=)の説明を一部抜粋します
+
+"(?&lt;=pattern)" "\K"
+    A zero-width positive look-behind assertion.  For example,
+    "/(?&lt;=\t)\w+/" matches a word that follows a tab, without
+    including the tab in $&amp;.  Works only for fixed-width look-
+    behind.
+
+ざっくり訳すと、「タブ文字列(\t)に文字列が一文字以上繋がってる場合にマッチするけど、  
+$&amp;（マッチした文字列が入る変数）にタブは含まないよ」となります
+こんな感じのワンライナーを書くと、実際に動きが確認出来ます
+
+$ perl -E 'if ("\taaa" =~ /(?&lt;=\t)\w+/) { say $&amp; }'
+aaa
+</code></pre>
+
+<p>P115. サンプルコード、new関数の下から二行目のコメント</p>
+
+<pre><code>誤：空のハッシュリファレンスを用意
+正：空じゃない
 </code></pre>
 ]]></content>
 <id>tag:blog.nobers.com,2013-10-14:entry-2013-10-14-01.html</id>
 <published>2013-10-14T27:27:23+0900</published>
-<updated>2013-10-14T16:57:43+09:00</updated>
+<updated>2013-10-14T18:19:20+09:00</updated>
 </entry>
 <entry>
 <title type="text">githubのPagesにtweetボタンを設置したらurlが動かなかった</title>
