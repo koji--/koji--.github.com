@@ -5,7 +5,7 @@
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.6">Perl Riji</generator>
 <id>tag:blog.nobers.com,2013-08-31:</id>
-<updated>2013-10-14T16:27:23+09:00</updated>
+<updated>2013-10-14T16:57:43+09:00</updated>
 <entry>
 <title type="text">書評のようなもの ++ 雅なPerl入門</title>
 <link href="http://blog.nobers.com/entry/2013-10-14-01.html" />
@@ -13,6 +13,9 @@
 <name>koji--</name>
 </author>
 <content><![CDATA[<h1>書評のようなもの ++ 雅なPerl入門</h1>
+
+<blockquote class="twitter-tweet" data-conversation="none"> <p><a href="https://twitter.com/koji_magi">@koji_magi</a> <a href="https://twitter.com/krocoke">@krocoke</a> 感想なんかも教えて欲しいですね。あんまりフィードバックがないので。冬コミも申し込んでるので、イラスト期待ですね！！</p>&mdash; kaz_hiramatsu (@kaz_hiramatsu) <a href="https://twitter.com/kaz_hiramatsu/statuses/381074315749232640">September 20, 2013</a></blockquote>
+
 
 <p>ということで、先日の<a href="http://yapcasia.org/2013/" target="_blank">YAPC::Asia</a>にて入手した雅なPerl入門という同人誌の<br/>
 感想など記事にしてみようと思います。<br/>
@@ -32,7 +35,7 @@
 
 <h2>目次</h2>
 
-<p>本編に入る前に、ひとまず目次をご覧あれ。</p>
+<p>本編に入る前に、まずは目次をご覧あれ。</p>
 
 <ul>
 <li>第１章　プロローグ</li>
@@ -215,7 +218,7 @@
 
 <p>これを見るだけでも、基本を網羅した構成であることは<br/>
 十分に伝わると思います。<br/>
-自分がPerlを学んだ初学者向けの分厚い参考書と比べても<br/>
+自分がPerlを学んだ分厚い参考書と比べても<br/>
 ページ数の差はあれど、中身では負けてない、という感想でした。<br/>
 このクオリティで同人誌とは…恐るべし。</p>
 
@@ -348,7 +351,7 @@ P115. サンプルコード、new関数の下から二行目のコメント。�
 ]]></content>
 <id>tag:blog.nobers.com,2013-10-14:entry-2013-10-14-01.html</id>
 <published>2013-10-14T27:27:23+0900</published>
-<updated>2013-10-14T16:27:23+09:00</updated>
+<updated>2013-10-14T16:57:43+09:00</updated>
 </entry>
 <entry>
 <title type="text">githubのPagesにtweetボタンを設置したらurlが動かなかった</title>
