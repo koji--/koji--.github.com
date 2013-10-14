@@ -5,7 +5,7 @@
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.6">Perl Riji</generator>
 <id>tag:blog.nobers.com,2013-08-31:</id>
-<updated>2013-10-14T18:52:33+09:00</updated>
+<updated>2013-10-14T18:55:08+09:00</updated>
 <entry>
 <title type="text">書評のようなもの ++ 雅なPerl入門</title>
 <link href="http://blog.nobers.com/entry/2013-10-14-01.html" />
@@ -257,7 +257,7 @@ Perlはある程度触れるかな、くらいの人ならほぼつまずかな�
 <h2>ラノベ読みとしての感想</h2>
 
 <p>さて、ここからが本気の出しどころですね。<br/>
-著者の@kaz_hiramatsuご本人も「ラノベを読む感覚で」と後書きされていますが<br/>
+著者の<a href="https://twitter.com/kaz_hiramatsu" target="blank">@kaz_hiramatsu</a>ご本人も「ラノベを読む感覚で」と後書きされていますが<br/>
 この本は物語仕立てになっています。</p>
 
 <p>Perlを学びたい雅という女の子がクロウというPerlハッカーに教えを乞う、という流れですが<br/>
@@ -414,7 +414,7 @@ aaa
 ]]></content>
 <id>tag:blog.nobers.com,2013-10-14:entry-2013-10-14-01.html</id>
 <published>2013-10-14T27:27:23+0900</published>
-<updated>2013-10-14T18:52:33+09:00</updated>
+<updated>2013-10-14T18:55:08+09:00</updated>
 </entry>
 <entry>
 <title type="text">githubのPagesにtweetボタンを設置したらurlが動かなかった</title>
