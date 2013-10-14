@@ -34,6 +34,9 @@
   article.thin {
       margin: 2%;
   }
+  article p {
+      margin: 2% 1%;
+  }
   article pre {
       margin: 3% 5%;
   }
@@ -46,6 +49,7 @@
       border-style: dotted;
       border-width: 0 0 3px;
       padding-bottom: 5px;
+      font-size: 26px;
   }
   p img {
       width: 60%;
@@ -63,8 +67,14 @@
       text-align: left;
       font-size: 30px;
   }
+  div.entry h2 {
+      border-style: dotted;
+      border-width: 0 0 3px;
+      font-size: 26px;
+      margin: 1% 3%;
+  }
   div.entry p {
-      margin: 2%;
+      margin: 2% 4%;
       text-align: left;
   }
   nav {
@@ -140,7 +150,7 @@
   div.share-buttons {
       margin: 1% 2%;
   }
-  div#disqus-thread {
+  div#disqus_thread {
       margin: 1% 2%;
   }
   ul.archives {
@@ -165,6 +175,346 @@
   </ul>
   <div class="clear"></div>
 </nav>
+<article>
+  <h1 class="title"><a href="http://blog.nobers.com/entry/2013-10-14-01.html">書評のようなもの ++ 雅なPerl入門</a></h1>
+  <time pubdate class="pubdate">2013-10-14 16:27</time>
+  <div class="entry-body">
+    
+
+<p>ということで、先日の<a href="http://yapcasia.org/2013/" target="_blank">YAPC::Asia</a>にて入手した雅なPerl入門という同人誌の<br/>
+感想など記事にしてみようと思います。<br/>
+ちなみに中身は健全なPerl学習用の本ですので、<br/>
+その点をふまえた上で、興味がある方は先へお進みください。</p>
+
+<h2>表紙</h2>
+
+<p><img src="http://blog.nobers.com/static/img/IMG_20131009_01_01.jpg" alt="表紙絵" /></p>
+
+<p>まごうことなく同人誌ですね。<br/>
+即売会という響きも久しく聞いていない身ですが<br/>
+これはいいものです。</p>
+
+<p>後から気づいたのですが、知人が表紙絵を書いておりました。<br/>
+縁とは意外な所で繋がるものです。</p>
+
+<h2>目次</h2>
+
+<p>本編に入る前に、ひとまず目次をご覧あれ。</p>
+
+<ul>
+<li>第１章　プロローグ</li>
+<li>第２章　Perl を知ろう
+
+<ul>
+<li>2.1　Perl の特徴</li>
+<li>2.2　Perl のスローガン</li>
+<li>2.3　CPAN</li>
+<li>2.4　コミュニティ</li>
+<li>2.5　YAPC</li>
+</ul>
+</li>
+<li>第３章　Perl の開発環境を整えよう
+
+<ul>
+<li>3.1　Perl をインストールする</li>
+<li>3.2　plenv のインストール</li>
+<li>3.3　Perl のバージョンを切り替える</li>
+<li>3.4　Hello, world</li>
+<li>3.5　プログラムを実行しよう</li>
+<li>3.6　Hello, world の解説</li>
+<li>3.7　say 関数</li>
+<li>3.8　コメント</li>
+</ul>
+</li>
+<li>第４章　スカラー
+
+<ul>
+<li>4.1　Perl の基本的なデータ型</li>
+<li>4.2　浮動小数点数リテラル</li>
+<li>4.3　整数リテラル</li>
+<li>4.4　数値用の演算子</li>
+<li>4.5　if 文と比較演算子</li>
+<li>4.6　ブール値</li>
+<li>4.7　unless 文</li>
+<li>4.8　if、unless 修飾子</li>
+<li>4.9　文字列</li>
+<li>4.10　文字列リテラル</li>
+<li>4.11　シングルクォート文字列</li>
+<li>4.12　ダブルクォート文字列</li>
+<li>4.13　文字列のエンコーディング</li>
+<li>4.14　文字列演算子</li>
+<li>4.15　文字列の比較演算子</li>
+<li>4.16　演算子による数値と文字列の自動変換</li>
+<li>4.17　論理演算子</li>
+<li>4.18　論理演算子を使った初期化</li>
+<li>4.19　//演算子</li>
+<li>4.20　演算子の優先順位と結合性</li>
+</ul>
+</li>
+<li>第５章　配列とリスト
+
+<ul>
+<li>5.1　配列とリストとは</li>
+<li>5.2　配列の変数展開</li>
+<li>5.3　配列への代入</li>
+<li>5.4　リストへの代入</li>
+<li>5.5　qw ショートカット</li>
+<li>5.6　配列に対する操作</li>
+<li>5.7　for 文</li>
+<li>5.8　push 関数</li>
+<li>5.9　pop 関数</li>
+<li>5.10　shift 関数</li>
+<li>5.11　unshift 関数</li>
+<li>5.12　sort 関数</li>
+<li>5.13　reverse 関数</li>
+<li>5.14　join 関数</li>
+<li>5.15　map 関数</li>
+</ul>
+</li>
+<li>第６章　ハッシュ
+
+<ul>
+<li>6.1　ハッシュとは</li>
+<li>6.2　ハッシュに対する操作</li>
+<li>6.3　keys 関数</li>
+<li>6.4　values 関数</li>
+<li>6.5　each 関数</li>
+<li>6.6　exists 関数</li>
+<li>6.7　delete 関数</li>
+</ul>
+</li>
+<li>第７章　サブルーチン
+
+<ul>
+<li>7.1　サブルーチンの定義と呼び出し</li>
+<li>7.2　サブルーチンの引数</li>
+<li>7.3　引数の渡し方</li>
+<li>7.4　サブルーチンの戻り値</li>
+<li>7.5　サブルーチンとパッケージ</li>
+</ul>
+</li>
+<li>第８章　コンテキスト
+
+<ul>
+<li>8.1　演算子とコンテキスト</li>
+<li>8.2　スカラーコンテキスト</li>
+<li>8.3　リストコンテキスト</li>
+</ul>
+</li>
+<li>第９章　正規表現
+
+<ul>
+<li>9.1　正規表現とは</li>
+<li>9.2　メタ文字と通常文字</li>
+<li>9.3　正規表現の文法</li>
+<li>9.4　文字そのものを指定するパターン</li>
+<li>9.5　.(ドット)</li>
+<li>9.6　[]</li>
+<li>9.7　\d と \D</li>
+<li>9.8　\w と \W</li>
+<li>9.9　量を指定するパターン</li>
+<li>9.10　a+</li>
+<li>9.11　a*</li>
+<li>9.12　a?</li>
+<li>9.13　a{m,n}</li>
+<li>9.14　よくばりとなまけもの</li>
+<li>9.15　位置に関するパターン</li>
+<li>9.16　^と$</li>
+<li>9.17　\A と \Z</li>
+<li>9.18　\z</li>
+<li>9.19　特殊な指定に関するパターン</li>
+<li>9.20　a|b</li>
+<li>9.21　(a)</li>
+<li>9.22　a(?:a)</li>
+<li>9.23　a(?=b)</li>
+<li>9.24　a(?!b)</li>
+<li>9.25　a(?&lt;=b)</li>
+<li>9.26　s/a/b/</li>
+<li>9.27　split 関数</li>
+</ul>
+</li>
+<li>第１０章　リファレンス
+
+<ul>
+<li>10.1　リファレンスとは</li>
+<li>10.2　リファレンスの生成</li>
+<li>10.3　スカラー変数のリファレンス</li>
+<li>10.4　配列変数のリファレンス</li>
+<li>10.5　モジュールの Data::Dumper の使用について</li>
+<li>10.6　ハッシュ変数のリファレンス</li>
+<li>10.7　矢印記法</li>
+<li>10.8　無名のメモリ領域へのリファレンス</li>
+<li>10.9　コードリファレンス</li>
+</ul>
+</li>
+<li>第１１章　CPAN モジュール
+
+<ul>
+<li>11.1　CPAN モジュールとは</li>
+<li>11.2　cpanm のインストール</li>
+<li>11.3　cpanm を使ってモジュールをインストールする</li>
+</ul>
+</li>
+<li>第１２章　オブジェクト指向
+
+<ul>
+<li>12.1　オブジェクト指向とは</li>
+<li>12.2　1. パッケージを作成する</li>
+<li>12.3　2. new メソッドでリファレンスとパッケージ名を bless する</li>
+<li>12.4　3. パッケージにメソッドを書く</li>
+<li>12.5　4. モジュールをインストールする</li>
+<li>12.6　5. new メソッドを呼んでオブジェクトを作成する</li>
+<li>12.7　6. オブジェクトに対してメソッドを呼び出す</li>
+<li>12.8　継承</li>
+<li>12.9　メソッドのオーバーライド</li>
+<li>12.10　メソッドのインポートとエクスポート</li>
+<li>12.11　use とは</li>
+<li>12.12　名前と変数のスコープについて</li>
+<li>12.13　カスタムな import メソッド</li>
+<li>12.14　File::Slurp</li>
+<li>12.15　Encode</li>
+<li>12.16　Path::Tiny</li>
+</ul>
+</li>
+<li>おわりに</li>
+</ul>
+
+
+<p>これを見るだけでも、基本を網羅した構成であることは<br/>
+十分に伝わると思います。<br/>
+自分がPerlを学んだ初学者向けの分厚い参考書と比べても<br/>
+ページ数の差はあれど、中身では負けてない、という感想でした。<br/>
+このクオリティで同人誌とは…恐るべし。</p>
+
+<h2>技術書としての感想</h2>
+
+<p>まず技術書としての話ですが、<br/>
+対象は初学者から言語の基本をある程度おさえた中級者向け、くらいの内容になっていました。<br/>
+なので、Perlに興味がある別言語の経験者の方や、<br/>
+Perlはある程度触れるかな、くらいの人ならほぼつまずかないで読める内容だと思います。</p>
+
+<p>参考までに、自分はWeb系の実務経験が三年半ほど、恐らく中級者に片足かけたくらいで<br/>
+大体の内容は分かりつつ、知らないことも幾つかあった、という感じでした。<br/>
+９章の正規表現で出てきた「よくばりとなまけもの」の話は<br/>
+初めて知る内容で、とても勉強になりました。<br/>
+自分はノートPCを置いといて、つまづいた所が出たらperldocを叩いたり、サンプルコードを打ち込む感じで<br/>
+読み進めていきました。</p>
+
+<p>内容は幅広く基礎を扱っているので、どの章も読み応えはありましたが<br/>
+特に、環境構築にplenvを使っていた点と、Encodeを取り上げて文字コードの変換に触れている点が<br/>
+自分には好印象でした。</p>
+
+<p>個人的には５、６章の組み込み関数はよく使うので<br/>
+もう少し具体的なサンプルがあってもいいかな、という気もしました。<br/>
+そういえばmap関数はあったのにgrep関数が無かったですね…もしかしてgrepってマイナーなのかな。</p>
+
+<p>あと、誤植や間違いとおぼしき箇所については<br/>
+出来る限りメモしておいたので、本記事の最後にまとめて記しておきます。<br/>
+誤植まとめに誤植などありましたら、コメント頂けると有り難いです。</p>
+
+<h2>ラノベ読みとしての感想</h2>
+
+<p>さて、ここからが本気の出しどころですね。<br/>
+著者の@kaz_hiramatsuご本人も「ラノベを読む感覚で」と後書きされていますが<br/>
+この本は物語仕立てになっています。<br/>
+Perlを学びたい雅という女の子がクロウというPerlハッカーに教えを乞う、という流れですが<br/>
+この二人の対話形式、凄く良いです。</p>
+
+<p>クロウの人物設定は、某hatenaさんあたりにこんな学生さん居そうだなーというリアルさがあるし<br/>
+雅は雅で「そんな奴いねえYO！」という部分と「いや、でもこういうことする奴居そうだな…」という<br/>
+居なそうで居そう、という良い塩梅を突いたキャラになっていて<br/>
+自分は好きな感じでした。</p>
+
+<p>あと、最も興味深かったのが、雅の的確なコメントです。<br/>
+この妙に的確コメントが、雅のキャラ設定を膨らませる燃料になっていたように感じました。<br/>
+プロローグで人物の説明があったクロウに対し、雅はキャラ設定についてはっきりと書かれている場面はありません。<br/>
+しかし、例えば2.2のやりとりを引用してみると</p>
+
+<pre><code>クロウ: （省略）... Perl のプログラムは、同じ事をやる場合でもいろんな書き方が出来るんだ。
+雅: いろんな書き方ができると、プログラムが読みにくくなる気がしますけど。
+</code></pre>
+
+<p>このコメント、何やら「ん？」と思わされます。<br/>
+「読みにくく」ということは、「プログラムは読むもの」という認識があることになります。<br/>
+つまり、雅はある程度、プログラムを読む習慣があると推測できます。<br/>
+また、「見る」ではなく「読む」という表現からも、プログラムに普段から触れている空気を感じ取る事ができます。</p>
+
+<p>一方、4.3では整数リテラルの説明に対して、このようなコメントを返しています。</p>
+
+<pre><code>雅: 数値もほとんど数学と同じですね。意外とプログラミングって簡単な気がして来ました。
+</code></pre>
+
+<p>さもプログラム初心者であるかのようなコメントです。<br/>
+雅はプロローグでPerlを知らないと言っているので、一見すると自然に見えますが<br/>
+前述のコメントがあるので、まるで初心者を「装っている」ように見えてきます。</p>
+
+<p>この後も、雅のコメントが的確すぎて<br/>
+進めば進むほど「もしや正体を隠しているのでは？」という疑問が強くなってくるという<br/>
+不思議なモチベーションに押されつつ、サクサクと読み進める事ができました。</p>
+
+<p>うっかりエピローグが用意されていて「実は私はMiyabiではなくMiyagawaだったのさ！」「な、なんだっｔｔ」<br/>
+という展開を妄想したりもしましたが、そんなことには全然なっていなかったので<br/>
+<del>残念</del>ほっと一安心でした。</p>
+
+<h2>まとめ</h2>
+
+<p>Perlを学ぶ本としても良い本ですし、ラノベ好きとしても楽しめる一冊でした。 <br/>
+Perl好きなら持っておいて、間違いは無いかと。</p>
+
+<p>もし次回があれば中級者向けの本を、と後書きにありましたので<br/>
+次の本も手にする機会があれば、是非よんでみたいと思います。</p>
+
+<h2>誤植、間違い等まとめ</h2>
+
+<pre><code>P13. 下方のサンプルコード４行目。誤：小数点以下３桁。正：小数点以下６桁
+P16. ７行目。誤：$x、$y、$x。正：$x、$y、$z
+P19. 表4.1、$x &gt;= $y の意味。誤：$x より$y が大きいか等しい。正：$x は$y より大きいか等しい
+P22. 4.8の三つ目の会話。誤：話者が雅。正：話者がクロウ。
+P31. 表4.3、$x ge $y の意味。誤：$x はより$y は大きいか等しい。正：$x は $y より大きいか等しい
+     同表、$x le $y の意味。誤：$x より$y は小さいか等しい。正：$x は$y より小さいか等しい
+P32. 一つ目のサンプルコードのコメント。誤："10" + "20"。正："10" . "20"
+P50. 下段のサンプルコード、一行目。誤：//emlist{。正：この行が不要。
+P77. 9.14の最後のクロウの台詞。誤：マッチする文字列の中で最も短いもの。正：マッチする文字列の中で最初にマッチしたもの
+     実際にコードを叩いて確かめてみました。perldoc perlreでは、以下のように説明されています
+
+     By default, a quantified subpattern is "greedy", that is, it will match
+     as many times as possible (given a particular starting location) while
+     still allowing the rest of the pattern to match.  If you want it to
+     match the minimum number of times possible, follow the quantifier with
+     a "?".  Note that the meanings don't change, just the "greediness":
+
+         *?        Match 0 or more times, not greedily
+         +?        Match 1 or more times, not greedily
+         ??        Match 0 or 1 time, not greedily
+         {n}?      Match exactly n times, not greedily (redundant)
+         {n,}?     Match at least n times, not greedily
+         {n,m}?    Match at least n but not more than m times, not greedily
+
+P81. 表9.5、メタ文字の(?:b)。誤：(?:b)。正：(?:a)。意味の説明が「パターンaのグループ化」なので
+P84. 9.25項目全体。誤：ここは恐らく(?&lt;=)の説明として、9.25の中身自体が適切ではないです。 
+     perldoc perlreから、(?&lt;=)の説明を一部抜粋します。
+
+     "(?&lt;=pattern)" "\K"
+         A zero-width positive look-behind assertion.  For example,
+         "/(?&lt;=\t)\w+/" matches a word that follows a tab, without
+         including the tab in $&amp;.  Works only for fixed-width look-
+         behind.
+
+     ざっくり訳すと、「タブ文字列(\t)に文字列が一文字以上繋がってる場合にマッチするけど、  
+     $&amp;（マッチした文字列が入る変数）にタブは含まないよ」となります。
+     こんな感じのコードを書くと、実際に動きが確認出来ます。
+
+     $ perl -E 'if ("\taaa" =~ /(?&lt;=\t)\w+/) { say $&amp; }'
+     aaa
+
+P102. 11.3のcpanm Moose。これは間違いじゃないのだけど、Mooseは依存が多くてインストールに時間がかかるから、
+      もう少しさくっと入るモジュールの方がいいかも。何かしらテストこけそうだし。
+      あえて茨の道を味わうのもアリと言えばアリですが！
+P115. サンプルコード、new関数の下から二行目のコメント。誤：空のハッシュリファレンスを用意。正：空じゃない
+</code></pre>
+
+  </div>
+</article>
 <article>
   <h1 class="title"><a href="http://blog.nobers.com/entry/2013-10-03-01.html">githubのPagesにtweetボタンを設置したらurlが動かなかった</a></h1>
   <time pubdate class="pubdate">2013-10-03 04:18</time>
@@ -218,9 +568,10 @@ HTMLのコーディングをはじめてみたりしています。</p>
   </div>
 </article>
 <ul class="footmenu">
-<li><a href="http://blog.nobers.com/tag/Riji.html">Riji(2)</a></li>
 <li><a href="http://blog.nobers.com/tag/design.html">design(2)</a></li>
+<li><a href="http://blog.nobers.com/tag/Riji.html">Riji(2)</a></li>
 <li><a href="http://blog.nobers.com/tag/github.html">github(1)</a></li>
+<li><a href="http://blog.nobers.com/tag/perl.html">perl(1)</a></li>
 </ul>
 <div class="clear"></div>
   </section>
