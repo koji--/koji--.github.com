@@ -164,7 +164,7 @@
   }
   </style>
   <title>
-archives | koji::*
+PHPでotfファイルからUnicodeを抽出する | koji::*
   </title>
 </head>
 <body>
@@ -172,18 +172,84 @@ archives | koji::*
     <h1><a href="http://blog.nobers.com/">koji::*</a></h1>
   </header>
   <section>
-<article class="thin">
+<nav>
+  <ul class="paginate">
+    <li class="prev">prev: <a href="http://blog.nobers.com/entry/2013-10-14-01.html">書評のようなもの ++ 雅なPerl入門</a>
+  </ul>
+  <div class="clear"></div>
+</nav>
 
+<article>
+  <aside class="minimenu">
+    <ul class="tags">
+      <li><a href="http://blog.nobers.com/tag/OpenType.html">OpenType</a></li>
+      <li><a href="http://blog.nobers.com/tag/Unicode.html">Unicode</a></li>
+      <li><a href="http://blog.nobers.com/tag/PHP.html">PHP</a></li>
+    </ul>
+  </aside>
+  <div class="entry">
+    <h1>PHPでotfファイルからUnicodeを抽出する</h1>
 
-<ul class="archives">
-<li><time>2013-11-10</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-10-19-01.html">PHPでotfファイルからUnicodeを抽出する</a></li>
-<li><time>2013-10-14</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-10-14-01.html">書評のようなもの ++ 雅なPerl入門</a></li>
-<li><time>2013-10-03</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-10-03-01.html">githubのPagesにtweetボタンを設置したらurlが動かなかった</a></li>
-<li><time>2013-09-26</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-09-26-01.html">一通りブログのデザインをいじってみた</a></li>
-<li><time>2013-09-15</time>&nbsp;<a href="http://blog.nobers.com/entry/2013-09-15.html">Riji触りつつデザインをいじってみている</a></li>
-</ul>
+<p><a href="https://github.com/PhenX/php-font-lib">https://github.com/PhenX/php-font-lib</a></p>
 
+<p>こちらのライブラリでいい感じに抽出が出来そうでした。<br/>
+ただ、OpenTypeについてある程度理解が無いと厳しそうだったので<br/>
+adobeとmicrosoft（とappleのTrueType）のfontのドキュメントも合わせて読んでみました。</p>
 
+<p><a href="http://www.adobe.com/devnet/font.html">http://www.adobe.com/devnet/font.html</a></p>
+
+<p><a href="http://www.microsoft.com/typography/otspec/">http://www.microsoft.com/typography/otspec/</a></p>
+
+<p><a href="https://developer.apple.com/fonts/ttrefman/">https://developer.apple.com/fonts/ttrefman/</a></p>
+
+<p>フォントファイルはいわゆるバイナリなので、フォーマットの中身を調べていけば分かるはずなのですが、<br/>
+ドキュメントの解読だけではUnicodeの割り当てまでたどり着けなかったので<br/>
+上記のライブラリの実装と見比べて、調査する形になりました。</p>
+
+<p>フォーマット全ては把握しきれませんでしたが、Unicodeの割り当てには<br/>
+glyphIndexArrayというattributeが該当するようです。<br/>
+glyphIndexArrayについての説明は以下のドキュメントにありました。</p>
+
+<p><a href="https://developer.apple.com/fonts/ttrefman/RM06/Chap6cmap.html">https://developer.apple.com/fonts/ttrefman/RM06/Chap6cmap.html</a></p>
+
+<p>コードとしては、上記ライブラリのwww/font_info.php内でUnicodeの抽出と実体参照による描画をやっている箇所がありました。<br/>
+cmapのテーブルからMicrosoft用のUnicode（BMP）に当たるglyphIndexArrayを抽出して<br/>
+HTMLで可視化しているようです。<br/>
+さきのドキュメントを調べた限りでは、BMP以外も別テーブルにあるようなので<br/>
+全てを抽出するには、複数のテーブル（PlatoFormIDとPlatformSpecificIDの組み合わせ）を調べる必要がありそうです。</p>
+
+<h2>おまけ</h2>
+
+<p>OpenTypeについて、ざっくりと説明すると、CIDと呼ばれる独自のIDに文字（字面）を割り当て<br/>
+CID毎にUnicodeをマッピングしておくことで、アプリケーションから文字を使用出来るようになっています。<br/>
+何故Unicodeそのままではない独自の形なのかと言うと、異体字の扱いが絡んでいるためとのこと。<br/>
+（異体字はUnicodeは同じコードが割り当てられるため、文字の出し分けが出来ない）</p>
+
+<p>また、このCIDと字面の割り当て方は、幾つかの仕様があるのですが<br/>
+今回、自分が必要になったのはAdobe-Japan1-4という日本語を割り当てるための仕様の一つでした。</p>
+
+<p><a href="http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf">http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf</a></p>
+
+<p>だいぶざっくりした調査ですが、メモ書きとして残しておきます。</p>
+
+  </div>
+  <hr class="body-end">
+  <dl class="meta">
+      <dt class="author">created by</dt>
+      <dd class="author">koji_magi</dd>
+      <dt class="time">created at</dt>
+      <dd class="time"><time>2013-11-10 09:32</time></dd>
+      <dt class="author">last modified by</dt>
+      <dd class="author">koji_magi</dd>
+      <dt class="time">last modified at</dt>
+      <dd class="time">2013-11-10 09:32</dd>
+  </dl>
+  <div class="share-buttons">
+      <a href="http://b.hatena.ne.jp/entry/http://blog.nobers.com/entry/2013-10-19-01.html" class="hatena-bookmark-button" data-hatena-bookmark-title="PHPでotfファイルからUnicodeを抽出する | koji::*" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="PHPでotfファイルからUnicodeを抽出する | koji::*" data-url="http://blog.nobers.com/entry/2013-10-19-01.html">Tweet</a>
+  </div>
+  <div id="disqus_thread"></div>
 </article>
   </section>
   <footer>
