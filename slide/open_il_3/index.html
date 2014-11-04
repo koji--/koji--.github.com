@@ -151,6 +151,103 @@ koji-- / github
 						<li>imgをやめてstyleのbackgroundで何とか</li>
 					</ul>
 				</section>
+				<section>
+                    <h3>解決のポイント</h3>
+				</section>
+				<section>
+                    <h3>アクセスログを見る</h3>
+				</section>
+				<section>
+                    <h2>事案３</h2>
+				</section>
+				<section>
+                    <h2>いろいろ前に出てくる</h2>
+					<hr>
+					<ul>
+						<li>銀河SSS、HTCJな端末</li>
+						<li>z-indexを無視して最前面に出てくる</li>
+						<li>Android4.0.4</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>原因</h3>
+				</section>
+				<section>
+					<h3>translate3d</h3>
+					<hr>
+					<ul>
+						<li>-webkit-transform: translate3dを使った時に、z-indexが上手く適用されないらしい</li>
+						<li>-webkit-transform: flatとかあるけど、こっちだとSafariが動かないとか何とか</li>
+						<li>３Ｄとかじゃなかったので、translate()にした</li>
+						<li>translateZ()でも同じような現象に</li>
+						<li>http://stackoverflow.com/questions/5472802/css-z-index-lost-after-webkit-transform-translate3d</li>
+						<li>https://bugs.webkit.org/show_bug.cgi?id=61824</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>解決のポイント</h3>
+				</section>
+				<section>
+                    <h3>英語に強いメンバーとStackOverFlow</h3>
+				</section>
+				<section>
+                    <h2>事案４</h2>
+				</section>
+				<section>
+                    <h2>いろいろ消える</h2>
+					<hr>
+					<ul>
+						<li>銀河SSS、HTCJな端末</li>
+						<li>z-indexを無視して消える</li>
+						<li>Android4.0.4</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>原因</h3>
+				</section>
+				<section>
+					<h3>謎</h3>
+					<hr>
+					<ul>
+						<li>position: fixedなDOMにz-indexが指定されてると、そこがz-indexの基準になってるっぽい</li>
+						<li>上にかぶさるものに細々とz-indexを指定してやる</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>解決のポイント</h3>
+				</section>
+				<section>
+                    <h3>経験豊富なフロントエンドエンジニア／デザイナー</h3>
+				</section>
+				<section>
+                    <h2>事案５</h2>
+				</section>
+				<section>
+                    <h2>いろいろ突き抜けてselectが反応する</h2>
+					<hr>
+					<ul>
+						<li>銀河SSS、HTCJな端末</li>
+						<li>いろいろ被さっててもタップすると裏のselectタグが反応しちゃう</li>
+						<li>Android4.0.4</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>原因</h3>
+				</section>
+				<section>
+					<h3>謎</h3>
+					<hr>
+					<ul>
+						<li>position: fixedとかabsoluteなものは裏要素がクリッカブルだと反応することがあるとか</li>
+						<li>上に被さってる時はselectをdisableに</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>解決のポイント</h3>
+				</section>
+				<section>
+                    <h3>根気よくdisableにする</h3>
+				</section>
 				<section markdown>
                     <h3>ご清聴<br>ありがとうございました</h3>
 				</section>
