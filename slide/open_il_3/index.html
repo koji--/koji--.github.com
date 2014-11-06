@@ -103,8 +103,9 @@ koji-- / github
 					<h2>浮かび上がる白画像</h2>
 					<hr>
 					<ul>
-						<li>SOでperiaなDCMの機種だけ白い画像が表示される</li>
+						<li>SOでperiaな機種</li>
 						<li>Android4.4.2</li>
+						<li>白い画像が表示される</li>
 					</ul>
 				</section>
 				<section>
@@ -134,9 +135,9 @@ koji-- / github
 					<hr>
 					<ul>
 						<li>銀河SSS、HTCJな端末でimgタグが2回リクエスト飛ばす</li>
+						<li>Android4.0.4</li>
 						<li>何故か2回めのレスポンスは適用されない</li>
 						<li>動的に画像を作るので不整合が出てアウト</li>
-						<li>Android4.0.4</li>
 					</ul>
 				</section>
 				<section>
@@ -165,8 +166,8 @@ koji-- / github
 					<hr>
 					<ul>
 						<li>銀河SSS、HTCJな端末</li>
-						<li>z-indexを無視して最前面に出てくる</li>
 						<li>Android4.0.4</li>
+						<li>z-indexを無視して最前面に出てくる</li>
 					</ul>
 				</section>
 				<section>
@@ -188,7 +189,7 @@ koji-- / github
                     <h3>解決のポイント</h3>
 				</section>
 				<section>
-                    <h3>英語に強いメンバーとStackOverFlow</h3>
+                    <h3>英語力とStackOverFlow</h3>
 				</section>
 				<section>
                     <h2>事案４</h2>
@@ -198,8 +199,8 @@ koji-- / github
 					<hr>
 					<ul>
 						<li>銀河SSS、HTCJな端末</li>
-						<li>z-indexを無視して消える</li>
 						<li>Android4.0.4</li>
+						<li>z-indexを無視して消える</li>
 					</ul>
 				</section>
 				<section>
@@ -209,7 +210,7 @@ koji-- / github
 					<h3>謎</h3>
 					<hr>
 					<ul>
-						<li>position: fixedなDOMにz-indexが指定されてると、そこがz-indexの基準になってるっぽい</li>
+						<li>position: fixedなDOMにz-indexが指定されると、そこがz-indexの基準になるっぽい</li>
 						<li>上にかぶさるものに細々とz-indexを指定してやる</li>
 					</ul>
 				</section>
@@ -227,15 +228,15 @@ koji-- / github
 					<hr>
 					<ul>
 						<li>銀河SSS、HTCJな端末</li>
-						<li>いろいろ被さっててもタップすると裏のselectタグが反応しちゃう</li>
 						<li>Android4.0.4</li>
+						<li>いろいろ被さっててもタップすると裏のselectタグが反応しちゃう</li>
 					</ul>
 				</section>
 				<section>
                     <h3>原因</h3>
 				</section>
 				<section>
-					<h3>謎</h3>
+					<h3>ナゾ</h3>
 					<hr>
 					<ul>
 						<li>position: fixedとかabsoluteなものは裏要素がクリッカブルだと反応することがあるとか</li>
@@ -246,7 +247,48 @@ koji-- / github
                     <h3>解決のポイント</h3>
 				</section>
 				<section>
-                    <h3>根気よくdisableにする</h3>
+                    <h3>根気</h3>
+				</section>
+				<section>
+                    <h2>番外編</h2>
+				</section>
+				<section>
+                    <h2>selectが必ず最初の位置に戻る</h2>
+					<hr>
+					<ul>
+						<li>iOS8.0+</li>
+						<li>開いたselectが勝手に最初の選択肢を選んでいる</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>原因</h3>
+				</section>
+				<section>
+					<h3>optgroup</h3>
+					<hr>
+					<ul>
+						<li>optgroupを使っていると必ず最初の選択肢が選ばれた状態に</li>
+						<li>修正はされているようだけど、いつのバージョンでリリースされるか不明</li>
+						<li>https://bugs.webkit.org/show_bug.cgi?id=137261</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>解決のポイント</h3>
+				</section>
+				<section>
+                    <h3>ぐっとこらえて暫定対応</h3>
+				</section>
+				<section>
+                    <h2>まとめ</h2>
+				</section>
+				<section>
+					<ul>
+						<li>スマホの対応は非常に泥臭い</li>
+						<li>根本原因が分からないことが多い</li>
+						<li>Chromeのdev tool使って根気よく現象を調べる</li>
+						<li>似たような事例をネットで探してあたりをつける</li>
+						<li>運が良ければWebkitのバグジラで見つかるかも</li>
+					</ul>
 				</section>
 				<section markdown>
                     <h3>ご清聴<br>ありがとうございました</h3>
