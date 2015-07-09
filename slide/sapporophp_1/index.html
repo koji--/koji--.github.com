@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sapporo.php #1</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Koji Takiguchi">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h3>php.net</h3>
+					<h3>関数リファレンス読書会</h3>
+					<h3>～ array編 ～</h3>
+					<div>
+						<small>Sapporo.php #1</small>
+					</div>
+					<div>
+						<small>Koji Takiguchi / <a href="http://twitter.com/koji_magi" target="_blank">@koji_magi</a></small>
+					</div>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+自己紹介
+--------------
+
+Koji Takiguchi
+
+@koji_magi / twitter
+
+koji-- / github
+
+株式会社infiniteloop / PHP / javascript
+
+最近はIngressに夢中
+					</script>
+				</section>
+				<section>
+                    <h3>あいえるたん</h3>
+				    <img width="400" height="500" src="iltan.png">
+				</section>
+				<section>
+                    <h3><a href="http://www.infiniteloop.co.jp/special/iltan/3d-dl.php" target="_blank">LINEスタンプ</a></h3>
+				    <img width="790" height="500" src="iltan2.png">
+				</section>
+				<section>
+                    <h2>本編</h2>
+					<ul>
+						<li>php.net</li>
+						<li>今回はarrayでいきます</li>
+					</ul>
+				</section>
+				<section>
+                    <h3>array_*</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+				    <section>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+				    </section>
+				</section>
+				<section>
+					<h3></h3>
+					<ul>
+						<li>tmlib.novel.js（ライブラリ）のコード読む　半日</li>
+						<li>Javascript書く　４行くらい</li>
+						<li>シナリオ書く　１日（苦行）</li>
+						<li>台詞の音声つくる　２日（超苦行）</li>
+					</ul>
+				</section>
+				<section>
+                    <h1>コンテンツ</h1>
+                    <h1>つくるの</h1>
+                    <h1>辛い</h1>
+				</section>
+				<section>
+                    <h3>Macからお告げが</h3>
+				</section>
+				<section>
+                    <h3>say</h3>
+				</section>
+				<section>
+                    <h3>App::kuroneko</h3>
+                    <div>自作のADV風テキスト表示ツール</div>
+				</section>
+				<section>
+                    <h3>世紀末ライトノベル風に<br>喋らせてみる</h3>
+				</section>
+				<section>
+                    <h3>Demo</h3>
+				</section>
+				<section>
+                    <h3>めでたしめでたし</h3>
+				</section>
+				<section markdown>
+                    <h3>ご清聴<br>ありがとうございました</h3>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
