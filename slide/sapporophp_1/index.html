@@ -86,56 +86,143 @@ koji-- / github
 					</ul>
 				</section>
 				<section>
-                    <h3>array_*</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
 				    <section>
+                        <h3>array_*</h3>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>array_change_key_case</li>
+                            <li>array_chunk</li>
+                            <li>array_column</li>
+                            <li>array_combine</li>
+                            <li>array_count_values</li>
+                            <li>array_diff_assoc</li>
+                            <li>array_diff_key</li>
+                            <li>array_diff_uassoc</li>
+                            <li>array_diff_ukey</li>
+                            <li>array_diff</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_fill_keys</li>
+                            <li>array_fill</li>
+                            <li>array_filter</li>
+                            <li>array_flip</li>
+                            <li>array_intersect_assoc</li>
+                            <li>array_intersect_key</li>
+                            <li>array_intersect_uassoc</li>
+                            <li>array_intersect_ukey</li>
+                            <li>array_intersect</li>
+                            <li>array_key_exists</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_keys</li>
+                            <li>array_map</li>
+                            <li>array_merge_recursive</li>
+                            <li>array_merge</li>
+                            <li>array_multisort</li>
+                            <li>array_pad</li>
+                            <li>array_pop</li>
+                            <li>array_product</li>
+                            <li>array_push</li>
+                            <li>array_rand</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_reduce</li>
+                            <li>array_replace_recursive</li>
+                            <li>array_replace</li>
+                            <li>array_reverse</li>
+                            <li>array_search</li>
+                            <li>array_shift</li>
+                            <li>array_slice</li>
+                            <li>array_splice</li>
+                            <li>array_sum</li>
+                            <li>array_udiff_assoc</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_udiff_uassoc</li>
+                            <li>array_udiff</li>
+                            <li>array_uintersect_assoc</li>
+                            <li>array_uintersect_uassoc</li>
+                            <li>array_uintersect</li>
+                            <li>array_unique</li>
+                            <li>array_unshift</li>
+                            <li>array_values</li>
+                            <li>array_walk_recursive</li>
+                            <li>array_walk</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array</li>
+                            <li>多い・・・</li>
+                            <li>（2015/07/09時点で51個）</li>
                         </ul>
 				    </section>
 				</section>
 				<section>
-					<h3></h3>
-					<ul>
-						<li>tmlib.novel.js（ライブラリ）のコード読む　半日</li>
-						<li>Javascript書く　４行くらい</li>
-						<li>シナリオ書く　１日（苦行）</li>
-						<li>台詞の音声つくる　２日（超苦行）</li>
-					</ul>
+                    <h3>実際に見ていきましょう</h3>
 				</section>
 				<section>
-                    <h1>コンテンツ</h1>
-                    <h1>つくるの</h1>
-                    <h1>辛い</h1>
+                    <h3>array_change_key_case</h3>
+                    <ul>
+                        <li>キーを小文字か大文字に統一した配列を返す</li>
+                        <li>統一した結果同じkeyだったら後勝ちで上書き</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>Macからお告げが</h3>
+                    <h3>array_chunk</h3>
+                    <ul>
+                        <li>一次元配列を指定サイズ毎の二次元配列にして返す</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>say</h3>
+                    <h3>array_column</h3>
+                    <ul>
+                        <li>二次元配列から指定したキーの値だけを集めた配列を返す</li>
+                        <li>indexに使う値を別キー指定で取ってくることも出来る</li>
+                        <li>PHP5.5.0</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>App::kuroneko</h3>
-                    <div>自作のADV風テキスト表示ツール</div>
+                    <h3>array_combine</h3>
+                    <ul>
+                        <li>キー用配列と値用配列から配列を生成して返す</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>世紀末ライトノベル風に<br>喋らせてみる</h3>
+                    <h3>array_count_values</h3>
+                    <ul>
+                        <li>同じ値が何個あるか集計して結果を配列で返す</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>Demo</h3>
+                    <h3>array_diff_assoc</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーと値の組み合わせで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                    </ul>
 				</section>
 				<section>
-                    <h3>めでたしめでたし</h3>
+                    <h3>array_diff_key</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                    </ul>
 				</section>
-				<section markdown>
+				<section>
                     <h3>ご清聴<br>ありがとうございました</h3>
 				</section>
 			</div>
