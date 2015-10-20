@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sapporo.php #1</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Koji Takiguchi">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h3>Phalcon触ってみた</h3>
+					<div>
+						<small>Sapporo.php #2</small>
+					</div>
+					<div>
+						<small>Koji Takiguchi / <a href="http://twitter.com/koji_magi" target="_blank">@koji_magi</a></small>
+					</div>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+自己紹介
+--------------
+
+Koji Takiguchi
+
+@koji_magi / twitter
+
+koji-- / github
+
+株式会社infiniteloop / PHP / javascript
+
+最近は登山に夢中
+					</script>
+				</section>
+				<section>
+                    <h3>あいえるたん</h3>
+				    <img width="400" height="500" src="iltan.png">
+				</section>
+				<section>
+                    <h3><a href="http://www.infiniteloop.co.jp/blog/2015/07/aieru-tan-line-stamp-release/" target="_blank">LINEスタンプ</a></h3>
+				    <img width="650" height="570" src="iltan3.png">
+				</section>
+				<section>
+                    <h2>本編</h2>
+					<ul>
+						<li>php.net</li>
+						<li>今回はarrayでいきます</li>
+					</ul>
+				</section>
+				<section>
+				    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_change_key_case</li>
+                            <li>array_chunk</li>
+                            <li>array_column</li>
+                            <li>array_combine</li>
+                            <li>array_count_values</li>
+                            <li>array_diff_assoc</li>
+                            <li>array_diff_key</li>
+                            <li>array_diff_uassoc</li>
+                            <li>array_diff_ukey</li>
+                            <li>array_diff</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_fill_keys</li>
+                            <li>array_fill</li>
+                            <li>array_filter</li>
+                            <li>array_flip</li>
+                            <li>array_intersect_assoc</li>
+                            <li>array_intersect_key</li>
+                            <li>array_intersect_uassoc</li>
+                            <li>array_intersect_ukey</li>
+                            <li>array_intersect</li>
+                            <li>array_key_exists</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_keys</li>
+                            <li>array_map</li>
+                            <li>array_merge_recursive</li>
+                            <li>array_merge</li>
+                            <li>array_multisort</li>
+                            <li>array_pad</li>
+                            <li>array_pop</li>
+                            <li>array_product</li>
+                            <li>array_push</li>
+                            <li>array_rand</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_reduce</li>
+                            <li>array_replace_recursive</li>
+                            <li>array_replace</li>
+                            <li>array_reverse</li>
+                            <li>array_search</li>
+                            <li>array_shift</li>
+                            <li>array_slice</li>
+                            <li>array_splice</li>
+                            <li>array_sum</li>
+                            <li>array_udiff_assoc</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array_udiff_uassoc</li>
+                            <li>array_udiff</li>
+                            <li>array_uintersect_assoc</li>
+                            <li>array_uintersect_uassoc</li>
+                            <li>array_uintersect</li>
+                            <li>array_unique</li>
+                            <li>array_unshift</li>
+                            <li>array_values</li>
+                            <li>array_walk_recursive</li>
+                            <li>array_walk</li>
+                        </ul>
+				    </section>
+                    <section>
+                        <h3>array_*</h3>
+                        <ul>
+                            <li>array</li>
+                            <li>多い・・・</li>
+                            <li>（2015/07/09時点で51個）</li>
+                        </ul>
+				    </section>
+				</section>
+				<section>
+                    <h3>実際に見ていきましょう</h3>
+				</section>
+				<section>
+                    <h3>array_change_key_case</h3>
+                    <ul>
+                        <li>キーを小文字か大文字に統一した配列を返す</li>
+                        <li>統一した結果同じkeyだったら後勝ちで上書き</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_chunk</h3>
+                    <ul>
+                        <li>一次元配列を指定サイズ毎の二次元配列にして返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_column</h3>
+                    <ul>
+                        <li>二次元配列から指定したキーの値だけを集めた配列を返す</li>
+                        <li>indexに使う値を別キー指定で取ってくることも出来る</li>
+                        <li>PHP5.5.0</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_combine</h3>
+                    <ul>
+                        <li>キー用配列と値用配列から配列を生成して返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_count_values</h3>
+                    <ul>
+                        <li>同じ値が何個あるか集計して結果を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_diff_assoc</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーと値の組み合わせで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_diff_key</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_diff_uassoc</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーと値の組み合わせで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                        <li>比較はユーザー定義関数を使う</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_diff_ukey</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーで比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                        <li>比較はユーザー定義関数を使う</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_diff</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>値で比較</li>
+                        <li>見つかった差分を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>小休止</h3>
+				    <img width="790" height="500" src="iltan2.png">
+				</section>
+				<section>
+                    <h3>array_fill_keys</h3>
+                    <ul>
+                        <li>キー用配列と値を指定して配列を生成する</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_fill</h3>
+                    <ul>
+                        <li>スタートのindex値と個数を指定して配列を生成する</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_filter</h3>
+                    <ul>
+                        <li>ユーザー定義関数で配列の要素をチェックして、結果がtrueの要素だけの配列を返す</li>
+                        <li>ユーザー定義関数の引数には、要素の値（デフォルト）、キー、値とキー両方のいずれかを渡せる</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_flip</h3>
+                    <ul>
+                        <li>キーと値を入れ替えた配列を返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_intersect_assoc</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーと値の組み合わせで比較</li>
+                        <li>見つかった重複要素を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_intersect_key</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーで比較</li>
+                        <li>見つかった重複要素を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_intersect_uassoc</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーと値の組み合わせで比較</li>
+                        <li>キーの比較はユーザー定義関数を使う</li>
+                        <li>見つかった重複要素を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_intersect_ukey</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>キーで比較</li>
+                        <li>見つかった重複要素を配列で返す</li>
+                        <li>比較はユーザー定義関数を使う</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_intersect</h3>
+                    <ul>
+                        <li>一つ目の配列を元に二つ目の配列に対して比較</li>
+                        <li>値で比較</li>
+                        <li>見つかった重複要素を配列で返す</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>array_key_exists</h3>
+                    <ul>
+                        <li>配列に指定したキーが存在するか判定する</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>今回はここまで</h3>
+				</section>
+				<section>
+                    <h3>ご清聴<br>ありがとうございました</h3>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
