@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -44,7 +44,11 @@
 			<div class="slides">
 
 				<section>
+                    <br>
+                    <br>
 					<h2>Phalcon触ってみた</h2>
+                    <hr>
+                    <br>
 					<div>
 						<p>Sapporo.php #2</p>
 					</div>
@@ -55,6 +59,7 @@
 				<section data-markdown>
 					<script type="text/template">
 自己紹介
+--------------
 --------------
 
 Koji Takiguchi
@@ -70,68 +75,99 @@ koji-- / github
 				</section>
 				<section>
                     <h3>こんなん</h3>
+                    <hr>
 				    <img width="500" height="500" src="kage_yama.jpg">
 				</section>
 				<section>
                     <h3><a href="http://www.infiniteloop.co.jp/blog/2015/07/aieru-tan-line-stamp-release/" target="_blank">あいえるたんLINEスタンプ</a></h3>
-				    <img width="650" height="570" src="iltan3.png">
+                    <hr>
+				    <img width="630" height="540" src="iltan3.png">
 				</section>
 				<section>
                     <h2>本編</h2>
+                    <hr>
 					<ul>
 						<li>Phalcon？</li>
 				        <img width="550" height="450" src="umibouzu.jpg">
 					</ul>
 				</section>
 				<section>
-				    <section>
-                        <h3>Phalconとは</h3>
-                        <ul>
-                            <li>Webアプリケーションフレームワーク</li>
-                            <li>PHPエクステンションとして実装されている</li>
-                            <li>爆速</li>
-                        </ul>
-				    </section>
+                    <h3>Phalconとは</h3>
+                    <hr>
+                    <ul>
+                        <li>Webアプリケーションフレームワーク</li>
+                        <li>PHPエクステンションとして実装されている</li>
+                        <li>爆速</li>
+                    </ul>
 				</section>
 				<section>
                     <h1>爆速！！！</h1>
 				</section>
 				<section>
-                    <h3>サンプルアプリ：INVO</h3>
-                        <ul>
-                            <li>送り状の管理アプリ</li>
-                            <li><a href="https://docs.phalconphp.com/en/latest/reference/tutorial-invo.html" target="_blank">公式のチュートリアル</a></li>
-                            <li>demo</li>
-                        </ul>
+                    <h3>とあるスライドによれば</h3>
+                    <hr>
+				    <img width="650" height="530" src="bakusoku.png">
+				</section>
+				<section>
+                    <h1>圧倒的！！</h1>
+				</section>
+				<section>
+                    <h1>触ってみるしか！！！１！</h1>
+				</section>
+				<section>
+                    <h3>とりあえず触ってみる</h3>
+                    <hr>
+                    <ul>
+                        <li>サンプルアプリ：INVO</li>
+                        <li>送り状の管理アプリ</li>
+                        <li><a href="https://docs.phalconphp.com/en/latest/reference/tutorial-invo.html" target="_blank">公式のチュートリアル</a></li>
+                        <li>demo</li>
+                    </ul>
 				</section>
 				<section>
                     <h3>触ってみて思ったこと</h3>
-                        <ul>
-                            <li>rootでシステムにインストールしていくスタイル（VM運用が良さそう）</li>
-                            <li>1.x系なら.boxもある</li>
-                            <li>フレームワークのソースが手軽に見れない（CとかZephir）</li>
-                            <li>チュートリアルを触って覚えるスタイル</li>
-                            <li>サンプルアプリが結構ある</li>
-                        </ul>
+                    <hr>
+                    <ul>
+                        <li>rootでmakeしてシステムにインストールしていくスタイル（VM運用が良さそう）</li>
+                        <li>vagrant用の.boxもある（ただし1.x系）</li>
+                        <li>フレームワークのソースはPHPじゃない（1.x系はC、2.0系はZephir）</li>
+                        <li>チュートリアルを触って覚えるスタイル</li>
+                        <li>ユーザーがスケルトンとか使えるリソースを公開している</li>
+                    </ul>
+				</section>
+				<section>
+                    <h3>Zephir</h3>
+                    <hr>
+                    <ul>
+                        <li>PHPエクステンションを書くための独自言語</li>
+                        <li>PHPに型とか静的言語っぽさを良い感じに突っ込んでる</li>
+                        <li>ソースみてみる</li>
+                    </ul>
+				</section>
+				<section>
+                    <h1>ワクワクしてきたぞ！！！</h1>
 				</section>
 				<section>
                     <h3>まずは</h3>
-                        <ul>
-                            <li>公式ドキュメントのチュートリアルがオススメ</li>
-                            <li>AutoloaderとかDependency InjectionみたいなWebフレームワークの基礎解説も</li>
-                            <li>大体英語（一部日本語訳もある）</li>
-                        </ul>
+                    <hr>
+                    <ul>
+                        <li>公式ドキュメントのチュートリアルがオススメ</li>
+                        <li>AutoloaderとかDependency InjectionみたいなWebフレームワークの基礎解説も</li>
+                        <li>大体英語（一部日本語訳もある）</li>
+                    </ul>
 				</section>
 				<section>
                     <h3>参考</h3>
-                        <ul>
-                            <li><a href="http://blog.asial.co.jp/1272" target="_blank">http://blog.asial.co.jp/1272</a></li>
-                            <li><a href="https://speakerdeck.com/arimo/dmmfalsehaiha-meteiaotasafalseji-arimokayu-ru-phalcon" target="_blank">https://speakerdeck.com/arimo/dmmfalsehaiha-meteiaotasafalseji-arimokayu-ru-phalcon</a></li>
-                            <li><a href="http://qiita.com/advent-calendar/2014/phalcon" target="_blank">http://qiita.com/advent-calendar/2014/phalcon</a></li>
-                        </ul>
+                    <hr>
+                    <ul>
+                        <li><a href="http://blog.asial.co.jp/1272" target="_blank">http://blog.asial.co.jp/1272</a></li>
+                        <li><a href="https://speakerdeck.com/arimo/dmmfalsehaiha-meteiaotasafalseji-arimokayu-ru-phalcon" target="_blank">https://speakerdeck.com/arimo/dmmfalsehaiha-meteiaotasafalseji-arimokayu-ru-phalcon</a></li>
+                        <li><a href="http://qiita.com/advent-calendar/2014/phalcon" target="_blank">http://qiita.com/advent-calendar/2014/phalcon</a></li>
+                    </ul>
 				</section>
 				<section>
                     <h3>ご清聴</h3>
+                    <hr>
                     <h3>ありがとうございました</h3>
 				</section>
 			</div>
