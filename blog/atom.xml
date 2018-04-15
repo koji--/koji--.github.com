@@ -5,26 +5,7 @@
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.13">Perl Riji</generator>
 <id>tag:unknown.example.com,2013-08-31:</id>
-<updated>2014-01-28T01:26:34+09:00</updated>
-<entry>
-<title type="text">MarvericsにアップデートしたらTitaniumStudioがログインで失敗する</title>
-<link href="http://unknown.example.com/entry/2014-01-28.html" />
-<author>
-<name>koji--</name>
-</author>
-<content><![CDATA[<h1>MarvericsにアップデートしたらTitaniumStudioがログインで失敗する</h1>
-
-<p>結論から言うと以下のjavaのアップグレードを適用すればいい。</p>
-
-<p><a href="http://support.apple.com/kb/DL1572" target="blank">http://support.apple.com/kb/DL1572</a></p>
-
-<p>参考リンク：
-<a href="https://developer.appcelerator.com/question/156106/mac-mavericks-and-titanium-studio" target="blank">AppceleratorのQA</a></p>
-]]></content>
-<id>tag:unknown.example.com,2014-01-28:entry-2014-01-28.html</id>
-<published>2014-01-28T26:26:34+0900</published>
-<updated>2014-01-28T01:26:34+09:00</updated>
-</entry>
+<updated>2018-04-15T20:49:29+09:00</updated>
 <entry>
 <title type="text">Hokkaido.pm#11に行ってきました。</title>
 <link href="http://unknown.example.com/entry/2013-12-28-01.html" />
@@ -71,7 +52,26 @@ KossyとMonocerosで何か簡単なアプリを作ろうと環境だけは整え
 ]]></content>
 <id>tag:unknown.example.com,2013-12-29:entry-2013-12-28-01.html</id>
 <published>2013-12-29T53:53:59+0900</published>
-<updated>2013-12-29T03:59:49+09:00</updated>
+<updated>2018-04-15T20:49:29+09:00</updated>
+</entry>
+<entry>
+<title type="text">MarvericsにアップデートしたらTitaniumStudioがログインで失敗する</title>
+<link href="http://unknown.example.com/entry/2014-01-28.html" />
+<author>
+<name>koji--</name>
+</author>
+<content><![CDATA[<h1>MarvericsにアップデートしたらTitaniumStudioがログインで失敗する</h1>
+
+<p>結論から言うと以下のjavaのアップグレードを適用すればいい。</p>
+
+<p><a href="http://support.apple.com/kb/DL1572" target="blank">http://support.apple.com/kb/DL1572</a></p>
+
+<p>参考リンク：
+<a href="https://developer.appcelerator.com/question/156106/mac-mavericks-and-titanium-studio" target="blank">AppceleratorのQA</a></p>
+]]></content>
+<id>tag:unknown.example.com,2014-01-28:entry-2014-01-28.html</id>
+<published>2014-01-28T26:26:34+0900</published>
+<updated>2014-01-28T01:26:34+09:00</updated>
 </entry>
 <entry>
 <title type="text">PHPでotfファイルからUnicodeを抽出する</title>
