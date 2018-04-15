@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>koji_magi::*</title>
-<link rel="alternate" href="http://unknown.example.com/" />
+<link rel="alternate" href="https://blog.nobers.com" />
 <author>koji_magi</author>
 <generator uri="https://github.com/Songmu/p5-Riji" version="0.0.13">Perl Riji</generator>
-<id>tag:unknown.example.com,2013-08-31:</id>
+<id>tag:blog.nobers.com,2013-08-31:</id>
 <updated>2018-04-15T20:49:29+09:00</updated>
 <entry>
 <title type="text">Hokkaido.pm#11に行ってきました。</title>
-<link href="http://unknown.example.com/entry/2013-12-28-01.html" />
+<link href="https://blog.nobers.com/entry/2013-12-28-01.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -50,13 +50,13 @@ KossyとMonocerosで何か簡単なアプリを作ろうと環境だけは整え
 今日のPMで貰ったモチベーションを利用して<br/>
 正月に何か動くものを作ってみようと思いました。</p>
 ]]></content>
-<id>tag:unknown.example.com,2013-12-29:entry-2013-12-28-01.html</id>
+<id>tag:blog.nobers.com,2013-12-29:entry-2013-12-28-01.html</id>
 <published>2013-12-29T53:53:59+0900</published>
 <updated>2018-04-15T20:49:29+09:00</updated>
 </entry>
 <entry>
 <title type="text">MarvericsにアップデートしたらTitaniumStudioがログインで失敗する</title>
-<link href="http://unknown.example.com/entry/2014-01-28.html" />
+<link href="https://blog.nobers.com/entry/2014-01-28.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -69,13 +69,13 @@ KossyとMonocerosで何か簡単なアプリを作ろうと環境だけは整え
 <p>参考リンク：
 <a href="https://developer.appcelerator.com/question/156106/mac-mavericks-and-titanium-studio" target="blank">AppceleratorのQA</a></p>
 ]]></content>
-<id>tag:unknown.example.com,2014-01-28:entry-2014-01-28.html</id>
+<id>tag:blog.nobers.com,2014-01-28:entry-2014-01-28.html</id>
 <published>2014-01-28T26:26:34+0900</published>
 <updated>2014-01-28T01:26:34+09:00</updated>
 </entry>
 <entry>
 <title type="text">PHPでotfファイルからUnicodeを抽出する</title>
-<link href="http://unknown.example.com/entry/2013-10-19-01.html" />
+<link href="https://blog.nobers.com/entry/2013-10-19-01.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -123,13 +123,13 @@ CID毎にUnicodeをマッピングしておくことで、アプリケーショ�
 
 <p>だいぶざっくりした調査ですが、メモ書きとして残しておきます。</p>
 ]]></content>
-<id>tag:unknown.example.com,2013-11-10:entry-2013-10-19-01.html</id>
+<id>tag:blog.nobers.com,2013-11-10:entry-2013-10-19-01.html</id>
 <published>2013-11-10T32:32:45+0900</published>
 <updated>2013-11-10T09:32:45+09:00</updated>
 </entry>
 <entry>
 <title type="text">書評のようなもの ++ 雅なPerl入門</title>
-<link href="http://unknown.example.com/entry/2013-10-14-01.html" />
+<link href="https://blog.nobers.com/entry/2013-10-14-01.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -145,7 +145,7 @@ CID毎にUnicodeをマッピングしておくことで、アプリケーショ�
 
 <h2>表紙</h2>
 
-<p><img src="/static/img/IMG_20131009_01_01.jpg" alt="表紙絵" /></p>
+<p><img src="https://blog.nobers.com/static/img/IMG_20131009_01_01.jpg" alt="表紙絵" /></p>
 
 <p>まごうことなく同人誌ですね。<br/>
 即売会という響きも久しく聞いていない身ですが<br/>
@@ -533,13 +533,13 @@ aaa
 正：空じゃない
 </code></pre>
 ]]></content>
-<id>tag:unknown.example.com,2013-10-14:entry-2013-10-14-01.html</id>
+<id>tag:blog.nobers.com,2013-10-14:entry-2013-10-14-01.html</id>
 <published>2013-10-14T27:27:23+0900</published>
 <updated>2013-10-14T19:01:25+09:00</updated>
 </entry>
 <entry>
 <title type="text">githubのPagesにtweetボタンを設置したらurlが動かなかった</title>
-<link href="http://unknown.example.com/entry/2013-10-03-01.html" />
+<link href="https://blog.nobers.com/entry/2013-10-03-01.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -560,13 +560,13 @@ IP直接指定だとurlが付与されるので、github.ioの仕様なのかも
 githubで使ってるkoji--というサブドメインが悪いんじゃないか説。<br/>
 確かハイフンと.を並べる文字列をドメインにしちゃアカン、みたいなのをどこかで見たような…</p>
 ]]></content>
-<id>tag:unknown.example.com,2013-10-03:entry-2013-10-03-01.html</id>
+<id>tag:blog.nobers.com,2013-10-03:entry-2013-10-03-01.html</id>
 <published>2013-10-03T18:18:52+0900</published>
 <updated>2013-10-14T18:44:59+09:00</updated>
 </entry>
 <entry>
 <title type="text">一通りブログのデザインをいじってみた</title>
-<link href="http://unknown.example.com/entry/2013-09-26-01.html" />
+<link href="https://blog.nobers.com/entry/2013-09-26-01.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -580,13 +580,13 @@ githubで使ってるkoji--というサブドメインが悪いんじゃない�
 <p>もう少し改良の余地はありますが<br/>
 ひとまずこれでやってみようかなと思います。</p>
 ]]></content>
-<id>tag:unknown.example.com,2013-09-26:entry-2013-09-26-01.html</id>
+<id>tag:blog.nobers.com,2013-09-26:entry-2013-09-26-01.html</id>
 <published>2013-09-26T34:34:21+0900</published>
 <updated>2013-10-09T00:54:31+09:00</updated>
 </entry>
 <entry>
 <title type="text">Riji触りつつデザインをいじってみている</title>
-<link href="http://unknown.example.com/entry/2013-09-15.html" />
+<link href="https://blog.nobers.com/entry/2013-09-15.html" />
 <author>
 <name>koji--</name>
 </author>
@@ -603,7 +603,7 @@ HTMLのコーディングをはじめてみたりしています。</p>
 ああでもないこうでもないと<br/>
 デザインをいじってみようかなと思います。</p>
 ]]></content>
-<id>tag:unknown.example.com,2013-09-15:entry-2013-09-15.html</id>
+<id>tag:blog.nobers.com,2013-09-15:entry-2013-09-15.html</id>
 <published>2013-09-15T09:09:44+0900</published>
 <updated>2013-10-09T00:54:31+09:00</updated>
 </entry>
